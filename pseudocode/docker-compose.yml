@@ -1,0 +1,27 @@
+version: '3.8'
+
+# Псевдокод / Pseudocode
+
+services:
+  mongo:
+    container_name: mongo
+    image: mongo:latest
+    restart: always
+
+  bot:
+    container_name: chatgpt_telegram_bot
+    command: python3 telegram_bot.py
+    restart: always
+  llm:
+    container_name: llm
+    restart: always
+
+  parser:
+    container_name: news_parser
+    command: python3 -m parser
+    restart: always
+    build:
+      context: "."
+      dockerfile: Dockerfile
+    depends_on:
+      - mongo
