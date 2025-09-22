@@ -73,7 +73,7 @@
   <table align="right">
     <tr>
       <td>
-        <b> ✏️ Расскажи о себе </b><br>
+        <b> ✏️ Расскажи о себе / Type about youreself </b><br>
         Собираем сигналы поведения и используем семантические эмбеддинги для персональных рекомендаций. / We collect behavior signals and use semantic embeddings for personalized recommendations.
       </td>
       <td><img src="docs/GIF4.gif" alt="Auto collect" width="180" /></td>
@@ -93,7 +93,7 @@
 </div>
 
 
-## ⚙️ Архитектура системы
+## ⚙️ Архитектура системы / Architecture
 
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">  
